@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <link rel="stylesheet" href="./css/estiloproducto.css">
+    
+</head>
+
+<body>
+    <h1>Productos</h1>
+
+    <form id="producto-formulario">
+        <label for="producto-Id">ID:</label>
+        <input type="text" id="producto-Id" required><br><br>
+
+        <label for="producto-Nombre">Nombre:</label>
+        <input type="text" id="producto-Nombre" required><br><br>
+
+        <label for="producto-Cantidad">Cantidad:</label>
+        <input type="number" id="producto-Cantidad" required><br><br>
+
+        <label for="producto-Categoria">Categoría:</label>
+        <select id="producto-Categoria" required></select><br><br>
+
+        <label for="producto-precio">Precio:</label>
+        <input type="number" id="producto-precio" step="0.01" required><br><br>
+
+        <input type="submit" value="Agregar Producto">
+    </form>
+
+    <div id="error-area"></div>
+
+    <h2>Lista de Productos</h2>
+
+    <div class="dialog" id="miDialogo" style="display: none;">
+        <form id="producto-formulario-editar">
+            <input type="hidden" id="producto-Id-Editar" required>
+            <label for="producto-Nombre-Editare">Nombre:</label>
+            <input type="text" id="producto-Nombre-Editar" required><br><br>
+    
+            <label for="producto-Cantidad-Editar">Cantidad:</label>
+            <input type="number" id="producto-Cantidad-Editar" required><br><br>
+    
+            <label for="producto-Categoria-Editar">Categoría:</label>
+            <select id="producto-Categoria-Editar" required></select><br><br>
+    
+            <label for="producto-precio-Editar">Precio:</label>
+            <input type="number" id="producto-precio-Editar" step="0.01" required><br><br>
+    
+            <input type="submit" value="Editar Producto">
+            <input type="button" value="Cancelar" onclick="cancelarModal()" >
+        </form>
+        <div id="error-area-Editar"></div>
+    </div>
+
+    <h3>Búsqueda de Productos</h2>
+    
+        <input type="text" id="Busqueda" placeholder="Buscar por nombre">
+    
+        <select id="Busqueda-Resultado">
+        </select>
+    <table id="producto-lista">
+      
+    </table>
+
+    <script src="./js/desafio2.js"></script>
+</body>
+
+</html>
+
+
