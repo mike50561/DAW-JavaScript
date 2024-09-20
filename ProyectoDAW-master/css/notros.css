@@ -1,0 +1,147 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  padding: 10px;
+
+}
+
+.container{
+    position: relative;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 280px);
+    min-height: 300px;
+    background: rgba(255,255,255,0.5) ;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+header{
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    left: 40px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.2) ;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    backdrop-filter:blur(10px) ;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+}
+header ul{
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    margin: 0 10px;
+
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 15px;
+    color: black;
+    border-radius:  25px;
+
+}
+.container h2{
+    font-size: 3em;
+    color: #8104ef;
+
+
+}
+
+.container p{
+    font-size: 1.1em;
+    color: #8104ef;
+
+}
+
+.incon img{
+    max-width:  200px;
+    animation: animacion 5s linear infinite;
+}
+
+#infodiv{
+    padding-top: 20px;
+}
+
+@keyframes animacion {
+    0%,100%
+    {
+        transform: translateY(50px);
+    }
+    50%
+    {
+        transform: translateY(100px);
+    }
+    
+}
+
+
+ul :hover{
+    color: rgb(212, 75, 203);
+}
+
+.info img{
+    animation: animacion 5s linear infinite;
+
+}
+
+/*Modo oscuro css*/
+.light-mode{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+.dark-mode{
+    background-image: linear-gradient(to top, #070626 0%, #0E040E 100%);
+
+}
+
+/*Boton*/
+.switch {
+    width: 80px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+
+  }
+  
+  .switch::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #66bb6a;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+  }
+  
+  #darklight:checked + .switch::before {
+    left: 40px;
+  }
+  
+  

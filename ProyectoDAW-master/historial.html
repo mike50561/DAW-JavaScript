@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Notas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilohistorial.css">
+    <link rel="icon" type="image/png" href="img/favaincon04.png"/>
+
+</head>
+<body id="body" class="light-mode">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="notros.html">Sobre Nosotros</a></li>
+                <li><a href="AgregarNota.html">Crear una Nota</a></li>
+                <li><a href="historial.html">Historial</a></li>
+                <li><input type="button" value="     ●" class="switch" id="darklight" style="font-size: 30px;"></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="historial" class="container mt-4"> 
+    <h1 class="text-center mt-3">Historial de Notas</h1>
+    <div id="contenedor-tabla" class="container mt-3">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Tipo</th>
+                    <th>Contenido</th>
+                    <th>Fecha</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="historial-table">
+            </tbody>
+        </table>
+    </div>
+  </div>
+    
+    <script src="js/historial.js"></script>
+    <script src="js/darkmodeHistory.js"></script>
+</body>
+</html>

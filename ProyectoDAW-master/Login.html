@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Producto</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" type="image/png" href="img/Favicon.png"/>
+</head>
+<body>
+    <section>
+        <div class="box">
+          <div class="container">
+            <div class="login">
+                <h2>Formulario de Producto</h2>
+                <form id="producto-form" action="procesar.php" method="post">
+                    <div class="inputbox">
+                        <input type="text" id="codigo" name="codigo" placeholder="Código">
+                        <img src="img/incon001.png" alt="">
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <img src="img/incon2.png" alt="">
+                    </div>
+                    <div class="inputbox">
+                        <input type="number" id="precio" name="precio" placeholder="Precio" min="0">
+                        <img src="img/incon2.png" alt="">
+                    </div>
+                    <div class="inputbox">
+                        <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad" min="0">
+                        <img src="img/incon2.png" alt="">
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" id="crear-producto" value="Crear Producto">
+                    </div>
+                </form>
+            </div>
+          </div>  
+        </div>
+    </section> 
+</body>
+</html>
